@@ -120,3 +120,31 @@ html {
  height: 100%;
   width: 20%;
 }
+
+
+.play-music{
+  display: flex;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  z-index: 50;
+}
+
+
+.music-toggle{
+  cursor: pointer;
+  font-size: 20px;
+  position:relative;
+  &:after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    background-color: #000;
+    position: absolute;
+    transition: .2s;
+  }
+  &:hover:after{
+    width: 100%;
+  }
+}
