@@ -1,0 +1,122 @@
+html {
+  background: white;
+}
+.wrapper {
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  width: 1000px;
+  height: 800px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 200px;
+  margin: 0;
+  padding: 0;
+  color: pink;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 110px;
+  text-shadow: 2px 2px black;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.gif{
+	position: absolute;
+	display: block;	
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+.otter{
+  background-image: url('images/otter.gif');
+  top: 30px;
+  left: 610px;
+  height: 100%;
+  width: 30%;
+}
+.lego{
+  background-image: url('images/lego.gif');
+  top: 40px;
+  left: 70px;
+ height: 100%;
+  width: 20%;
+}
+.ac{
+  background-image: url('images/ac.gif');
+  top: 400px;
+  left: 0px;
+  height: 100%;
+  width: 20%;
+}
+.bmc{
+  background-image: url('images/bmc.gif');
+  top: 430px;
+  left: 550px;
+  height: 100%;
+  width: 20%;
+   z-index: 1;
+}
+
+.corgi{
+  background-image: url('images/corgi.gif');
+  top: 650px;
+  left: 600px;
+  height: 100%;
+  width: 20%;
+}
+
+.eevee{
+  background-image: url('images/eevee.gif');
+  top: 90px;
+  left: 400px;
+  height: 100%;
+  width: 20%;
+}
+
+.fox{
+  background-image: url('images/fox.gif');
+    top: 380px;
+  left: 170px;
+  height: 100%;
+  width: 20%;
+   z-index: 1;
+}
+
+.link{
+  background-image: url('images/link.gif');
+    top: 450px;
+  left: 700px;
+  height: 100%;
+  width: 20%;
+}
+
+.op{
+  background-image: url('images/op.gif');
+  top: 270px;
+  left: 300px;
+  height: 100%;
+  width: 30%;
+   z-index: 0;
+}
+.ramen{
+  background-image: url('images/ramen.gif');
+  top: 680px;
+  left: 400px;
+  height: 100%;
+  width: 15%;
+   z-index: 1;
+}
+.stitch{
+  background-image: url('images/stitch.gif');
+  top: 680px;
+  left: 100px;
+ height: 100%;
+  width: 20%;
+}
