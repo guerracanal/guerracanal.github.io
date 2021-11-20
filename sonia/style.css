@@ -1,6 +1,18 @@
 html {
   background: white;
 }
+
+body {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Nunito', sans-serif;
+}
+
 .wrapper {
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -19,10 +31,10 @@ html {
   top: 200px;
   margin: 0;
   padding: 0;
-  color: pink;
+  color: #F8C1C2;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   font-size: 110px;
-  text-shadow: 2px 2px black;
+  text-shadow: 2px 2px #F3999D;
   height: 100%;
   width: 100%;
   z-index: 1;
@@ -125,7 +137,6 @@ html {
   width: 20%;
 }
 
-
 .play-music{
   display: flex;
   position: absolute;
@@ -134,7 +145,30 @@ html {
   z-index: 50;
 }
 
-
+.music-animation{
+  display: flex;
+  margin-right: 10px;
+  align-items: flex-end;
+  position: relative;
+  top: -5px;
+  &.on{
+    .bar{
+      animation: bar 1.2s infinite;
+    }
+    .bar2{
+      animation-delay: .1s;
+    }
+    .bar3{
+      animation-delay: .2s;
+    }
+    .bar4{
+      animation-delay: .3s;
+    }
+    .bar5{
+      animation-delay: .4s;
+    }
+  }
+}
 .music-toggle{
   cursor: pointer;
   font-size: 20px;
@@ -150,5 +184,25 @@ html {
   }
   &:hover:after{
     width: 100%;
+  }
+}
+.bar{
+  width: 1px;
+  background-color: #000;
+  height: 2px;
+  display: block;
+  margin: 0 1px; 
+}
+
+
+@keyframes bar{
+  0%{
+    height:4px;
+  }
+  50%{
+    height: 14px;
+  }
+  100%{
+    height: 4px;
   }
 }
